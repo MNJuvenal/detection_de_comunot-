@@ -1,0 +1,11 @@
+
+Le répertoire `src` contient le code source principal du projet OCA. Voici un aperçu de sa structure :
+
+plus précisement on a :
+
+    --G_graph.py pour lea structures et les methodes essentiels 
+    --test.py pour la partie 1 et 2  et deux pour executer et tester decomenter les codes  en fin de fichier 
+    --test2.py   c'est implémentation  de la fonction du papier et un test sur un graphe generer aléatoirement .
+    les Dossier tes test_parties contiens des images annotés des tests fais sur les divers algos et les noms d'images sont tres explicites 
+
+.
