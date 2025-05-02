@@ -1,3 +1,47 @@
+Détection de Communautés dans des Réseaux Sociaux
+Introduction
+
+Ce projet explore la détection de communautés dans les réseaux sociaux, représentés comme des graphes où les nœuds symbolisent les utilisateurs et les arêtes symbolisent les interactions. L'objectif principal est d'analyser et de mettre en œuvre des algorithmes avancés, tels que Bron-Kerbosch, pour détecter des cliques et bicliques maximales. Le projet inclut une évaluation des performances des algorithmes sur des graphes générés aléatoirement ainsi que sur des données réelles.
+Technologies Utilisées
+
+    Langage : Python
+    Bibliothèques : NetworkX, Matplotlib, NumPy, Pandas
+
+Méthodologie
+
+    Représentation des Graphes : Liste d'adjacence stockée dans un dictionnaire pour une manipulation efficace.
+    Algorithmes Implémentés :
+        Bron-Kerbosch pour l'énumération des cliques maximales.
+        Génération de graphes aléatoires.
+        Analyse des graphes (degrés, chemins induits, etc.).
+    Complexité :
+        Les méthodes optimisées ont des complexités variant de O(1) à O(n²), selon les opérations.
+        La génération de graphes et l'énumération des cliques maximales sont les plus coûteuses en temps.
+
+Résultats
+
+    Analyse des graphes générés, notamment des graphes aléatoires et des données réelles (ex. : graphes Stanford).
+    Visualisation des résultats via des graphes et histogrammes des degrés.
+    Performances mesurées en termes de temps d'exécution et utilisation mémoire.
+
+Points Saillants
+
+    Implémentation détaillée des algorithmes avec analyse des complexités.
+    Utilisation des bibliothèques Python pour simplifier et accélérer certaines opérations.
+    Comparaison des performances sur des graphes aléatoires et réels.
+
+Conclusion
+
+Ce projet a permis de :
+
+    Développer des compétences en analyse et en implémentation d'algorithmes de graphes.
+    Explorer les défis de la détection de communautés dans les réseaux sociaux.
+    Poser une base solide pour des applications futures dans des domaines tels que le marketing ciblé et l'analyse de la propagation d'information.
+
+Références
+
+    Algo de Bron-Kerbosch : ScienceDirect
+    Documentation NetworkX : NetworkX Documentation
 
 Le répertoire `src` contient le code source principal du projet OCA. Voici un aperçu de sa structure :
 
@@ -7,5 +51,6 @@ plus précisement on a :
     --test.py pour la partie 1 et 2  et deux pour executer et tester decomenter les codes  en fin de fichier 
     --test2.py   c'est implémentation  de la fonction du papier et un test sur un graphe generer aléatoirement .
     les Dossier tes test_parties contiens des images annotés des tests fais sur les divers algos et les noms d'images sont tres explicites 
+    un rapport est également disponible en pdf dans le dossier rapport .
 
 .
