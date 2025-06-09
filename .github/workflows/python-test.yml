@@ -1,0 +1,33 @@
+name: Python Package Test
+
+on:
+  push:
+    branches: [ "main", "master" ] # Triggers on pushes to main or master
+  pull_request:
+    branches: [ "main", "master" ] # Triggers on pull requests to main or master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10"] # Specify Python versions to test against
+
+    steps:
+    - uses: actions/checkout@v3 # Checks out your repository under $GITHUB_WORKSPACE
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install networkx matplotlib # Install packages used by G_graph.py and tests
+        # If you have a requirements.txt, you would use:
+        # pip install -r requirements.txt
+
+    - name: Test with unittest
+      run: |
+        python -m unittest discover tests -v # Runs tests from the 'tests' directory
