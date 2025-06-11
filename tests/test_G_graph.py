@@ -23,8 +23,7 @@ class TestGraph(unittest.TestCase):
         g.add_edge('A', 'B')
         self.assertIn('A', g.nodes())
         self.assertIn('B', g.nodes())
-        self.assertIn(('A', 'B'), g.edges()) # Assuming edges() returns list of tuples
-                                          # and order might matter or be consistent
+        self.assertTrue(('A', 'B') in g.edges() or ('B', 'A') in g.edges())                                          # and order might matter or be consistent
         self.assertTrue(g.has_edge('A', 'B'))
         self.assertTrue(g.has_edge('B', 'A')) # For undirected graph
 
